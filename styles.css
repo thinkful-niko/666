@@ -1,0 +1,76 @@
+
+body{
+	overflow:hidden;
+}
+
+svg{
+	transform:rotate('30deg');
+	transition: all 1s;
+}
+.node {
+	font: 300 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	fill: #bbb;
+}
+
+.node:hover {
+	fill: #000;
+}
+
+.link {
+	stroke: steelblue;
+	stroke-opacity: .4;
+	fill: none;
+	pointer-events: none;
+}
+
+.node:hover,
+.node--source,
+.node--target {
+	font-weight: 700;
+}
+
+.node--source {
+	fill: #2ca02c;
+}
+
+.node--target {
+	fill: #d62728;
+}
+
+.link--source,
+.link--target {
+	stroke-opacity: 1;
+	stroke-width: 2px;
+}
+
+.link--source {
+	stroke: #d62728;
+}
+
+.link--target {
+	stroke: #2ca02c;
+}
+
+
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+}
+.svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.results{
+	position:absolute;
+	top:20px;
+	left:20px;
+	z-index:9999;
+}

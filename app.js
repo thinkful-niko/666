@@ -16,7 +16,7 @@ var line = d3.svg.line.radial()
 	.radius(function(d) { return d.y; })
 	.angle(function(d) { return d.x / 180 * Math.PI; });
 
-	var svg = d3.select("body")
+	var svg = d3.select("#circle")
 
 	.append("svg")
 	.attr("width", '100%')
@@ -183,7 +183,7 @@ document.body.addEventListener("touchmove", function(e) {
 });
 
 */
-
+/*
 $("body").on({
     ontouchmove : function(e) {
         e.preventDefault(); 
@@ -271,3 +271,6 @@ $(function() {
 		$('.results').text($('.node--target').html() + ' ' + $('.node--source').html())
 	})
 })
+
+
+*/

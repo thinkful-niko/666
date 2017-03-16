@@ -1,11 +1,48 @@
-
-body{
-	overflow:hidden;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(24, 24, 24);
+  color: rgb(200, 200, 200);
+  margin:0;
+  padding:0;
+  overflow:hidden;
+}
+
+.collapse{
+}
+nav{
+	background:rgba(0,0,0,.8);
+	text-align:center;
+	position:relative;
+	z-index:2;
+	padding:.5em;
+	
+}
+.artistInfo{
+	color:white;
+	background:rgba(0,0,0,.8);
+	position:relative;
+	left:0;
+	z-index:2;
+	padding:2em;
+	line-height:2em;
+	font-size:.8em;
+	//margin-top: -1em;
+	width: 50vw;
+	border-top:1px solid #222;
+	white-space: nowrap;
+	overflow: hidden;	
+}
 svg{
 	transform:rotate('30deg');
 	transition: all 1s;
+	position:fixed;
+	top:0;
+	right;0;
+	
 }
 .node {
 	font: 300 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -73,4 +110,10 @@ svg{
 	top:20px;
 	left:20px;
 	z-index:9999;
+}
+
+iframe{
+	width:50px;
+	height:50px;
+	display:block;
 }

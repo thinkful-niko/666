@@ -183,7 +183,6 @@ document.body.addEventListener("touchmove", function(e) {
 });
 
 */
-/*
 $("body").on({
     ontouchmove : function(e) {
         e.preventDefault(); 
@@ -273,4 +272,3 @@ $(function() {
 })
 
 
-*/
